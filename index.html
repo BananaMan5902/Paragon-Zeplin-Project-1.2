@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bomber Zeppelin 💥</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://accounts.google.com/gsi/client" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <div class="logo">💣</div>
+    <h1>BOMBER ZEPPELIN</h1>
+    <p class="subtitle">Your slideshow. Your explosions.</p>
+
+    <label for="slidesUrl">Google Slides link</label>
+    <input
+      id="slidesUrl"
+      type="url"
+      placeholder="Paste your Google Slides link..."
+    >
+
+    <button id="connectBtn" class="secondary">
+      🔐 Connect Google
+    </button>
+    <p id="accountStatus" class="status">Not connected</p>
+
+    <button id="previewBtn" disabled>
+      🔎 Load presentation
+    </button>
+
+    <section id="preview" class="preview">
+      Your presentation details will appear here.
+    </section>
+
+    <label for="emoji">Choose explosion emojis</label>
+    <select id="emoji">
+      <option value="💥">💥 Explosions</option>
+      <option value="💣">💣 Bombs</option>
+      <option value="🔥">🔥 Fire</option>
+      <option value="☄️">☄️ Comets</option>
+      <option value="💥🔥💣">💥🔥💣 All three</option>
+    </select>
+
+    <label for="scope">Which slides?</label>
+    <select id="scope">
+      <option value="all">Every slide</option>
+      <option value="first">First slide only</option>
+    </select>
+
+    <button id="bombBtn" class="danger" disabled>
+      💥 BOMBER ZEPPELIN!
+    </button>
+
+    <p class="warning">
+      Warning: existing content on selected slides will be removed.
+      Make a copy of your presentation first!
+    </p>
+
+    <p id="message" role="status" aria-live="polite">
+      Website loaded.
+    </p>
+  </main>
+</body>
+</html>
